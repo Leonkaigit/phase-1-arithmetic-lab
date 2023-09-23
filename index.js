@@ -5,10 +5,8 @@ let multiply = num1 * num2;
 console.log(multiply);
 
 function generateRandomIntegerGreaterThanZero() {
-    let randomFloat = Math.random();
-
-    let randomInteger = Math.floor(randomFloat * Number.MAX_SAFE_INTEGER);
-    return randomInteger
+    const random = Math.ceil(Math.random() * 100) + 1;
+    return random;
 }
 
 let random = generateRandomIntegerGreaterThanZero();
